@@ -829,7 +829,7 @@ h4 {
 
 .cta-banner__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: auto 1fr auto;
   gap: var(--spacing-xl);
   align-items: center;
 }
@@ -871,14 +871,16 @@ h4 {
 
 .cta-banner__images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-xs);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
 }
 
 .cta-banner__images img {
-  height: 200px;
+  height: 160px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  width: 100%;
 }
 
 .cta-banner__badge {
