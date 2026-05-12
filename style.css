@@ -428,7 +428,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  width: 300px;
+  width: 400px;
   display: flex;
   align-items: center;
   cursor: pointer;
