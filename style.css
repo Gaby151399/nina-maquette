@@ -100,9 +100,9 @@ h4 {
   padding: var(--spacing-2xl) 0;
 }
 
-.section--light {
+/* .section--light {
   background: var(--color-bg-light);
-}
+} */
 
 .text-primary {
   color: var(--color-primary);
@@ -793,6 +793,12 @@ h4 {
 }
 
 /* Pourquoi */
+.pourquoi {
+  background: var(--color-banner);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
 .pourquoi__list {
   display: flex;
   flex-direction: column;
