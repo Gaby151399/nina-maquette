@@ -897,32 +897,46 @@ h4 {
 /* ===========================
    INSTAGRAM
    =========================== */
+/* ===========================
+   INSTAGRAM
+   =========================== */
 .instagram {
-  background: var(--color-white);
+  background: var(--color-bg-light);
+  padding: var(--spacing-lg) 0;
 }
 
-.instagram h3 {
-  font-size: var(--fs-md);
-  margin-bottom: var(--spacing-md);
-  color: var(--color-text-muted);
+.instagram__inner {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.instagram__info .section__label {
+  margin-bottom: 0.3rem;
+}
+
+.instagram__info h3 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  color: var(--color-text);
 }
 
 .instagram__grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: var(--spacing-xs);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  gap: 0.5rem;
 }
 
 .instagram__grid img {
-  height: 150px;
+  height: 110px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  width: 100%;
   transition: transform 0.3s;
 }
 
-.instagram__grid img:hover {
-  transform: scale(1.05);
-}
+.instagram__grid img:hover { transform: scale(1.04); }
 
 /* ===========================
    FOOTER
@@ -1011,7 +1025,7 @@ h4 {
 .footer__form input {
   flex: 1;
   padding: 0.6rem 1rem;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.08);
   color: var(--color-white);
