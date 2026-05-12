@@ -197,7 +197,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 }
 
 .logo--light .logo__k,
-.logo--light .logo__text { color: var(--color-white); }
+.logo--light .logo__beauty,
+.logo--light .logo__academy { color: var(--color-white); }
 
 .logo__text {
   font-size: 0.6rem;
@@ -205,8 +206,12 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   line-height: 1.3;
-  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
 }
+
+.logo__beauty { color: var(--color-primary); font-size: 16px; }
+.logo__academy { color: var(--color-text); }
 
 .nav {
   display: flex;
