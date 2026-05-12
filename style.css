@@ -12,6 +12,7 @@
   --color-primary: #D9736A;
   --color-primary-dark: #C96B6B;
   --color-primary-light: #E8837A;
+  --color-primary-light-3: #f6d5d04f;
   --color-primary-light-2: #f6d4d0;
 
   --color-text: #1A1A1A;
@@ -98,7 +99,7 @@ h4 {
 }
 
 .section {
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-md) 0;
 }
 
 /* .section--light {
@@ -686,7 +687,7 @@ h4 {
   justify-content: center;
   gap: var(--spacing-lg);
   flex-wrap: wrap;
-  padding: var(--spacing-md) 0;
+  padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-border);
   font-size: var(--fs-sm);
   color: var(--color-text-muted);
@@ -707,8 +708,18 @@ h4 {
    =========================== */
 .three-cols {
   display: grid;
-  grid-template-columns: 1fr 1.4fr 1fr;
+  grid-template-columns: 1fr 300px;
   gap: var(--spacing-xl);
+  align-items: stretch;
+}
+
+.resultats-boutique {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-xl);
+  background: var(--color-primary-light-3);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
   align-items: start;
 }
 
@@ -798,7 +809,7 @@ h4 {
 .pourquoi {
   background: var(--color-banner);
   border-radius: var(--radius-md);
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .pourquoi__list {
