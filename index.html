@@ -357,9 +357,24 @@
                 <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400&q=80" alt="Cils">
             </div>
             <div class="cta-banner__badge">
-                <span>OFFRE SPÉCIALE</span>
-                <strong>-50€</strong>
-                <small>JUSQU'AU 31/05</small>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="100" cy="100" r="88" fill="white" stroke="#D9736A" stroke-width="2" stroke-dasharray="6 4"/>
+                  <defs>
+                    <!-- arc haut : part de gauche vers droite, à l'intérieur du cercle -->
+                    <path id="topArc"    d="M 22,100 A 78,78 0 0,1 178,100"/>
+                    <!-- arc bas : inversé -->
+                    <path id="bottomArc" d="M 22,100 A 78,78 0 0,0 178,100"/>
+                  </defs>
+                  <!-- texte haut suit l'arc, dy négatif pour remonter à l'intérieur -->
+                  <text font-size="12" font-family="DM Sans, sans-serif" font-weight="700" letter-spacing="2" fill="#5a6a7a" text-anchor="middle">
+                    <textPath href="#topArc" startOffset="50%" dy="-8">OFFRE SPÉCIALE</textPath>
+                  </text>
+                  <text x="100" y="112" text-anchor="middle" font-family="Playfair Display, serif" font-size="36" font-weight="700" fill="#D9736A">-50€</text>
+                  <!-- texte bas suit l'arc inversé, dy positif pour descendre à l'intérieur -->
+                  <text font-size="12" font-family="DM Sans, sans-serif" font-weight="700" letter-spacing="2" fill="#5a6a7a" text-anchor="middle">
+                    <textPath href="#bottomArc" startOffset="50%" dy="20">JUSQU'AU 31/05</textPath>
+                  </text>
+                </svg>
             </div>
         </div>
     </section>
