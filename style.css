@@ -12,6 +12,7 @@
   --color-primary: #D9736A;
   --color-primary-dark: #C96B6B;
   --color-primary-light: #E8837A;
+  --color-primary-light-2: #f6d4d0;
 
   --color-text: #1A1A1A;
   --color-text-muted: #6B6B6B;
@@ -822,8 +823,8 @@ h4 {
    CTA BANNER
    =========================== */
 .cta-banner {
-  background: var(--color-bg-section);
-  padding: var(--spacing-2xl) 0;
+  background: var(--color-primary-light-2);
+  padding: var(--spacing-md) 0;
 }
 
 .cta-banner__inner {
@@ -865,7 +866,7 @@ h4 {
 
 .cta-banner__note {
   font-size: var(--fs-xs);
-  color: var(--color-text-muted);
+  color: var(--color-text);
 }
 
 .cta-banner__images {
